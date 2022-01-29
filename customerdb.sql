@@ -42,6 +42,29 @@ LOCK TABLES `account_info` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `countries_info`
+--
+
+DROP TABLE IF EXISTS `countries_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `countries_info` (
+  `country_id` varchar(20) NOT NULL,
+  `country_code` varchar(5) NOT NULL,
+  PRIMARY KEY (`country_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `countries_info`
+--
+
+LOCK TABLES `countries_info` WRITE;
+/*!40000 ALTER TABLE `countries_info` DISABLE KEYS */;
+/*!40000 ALTER TABLE `countries_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `customer_info`
 --
 
@@ -104,4 +127,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-29 12:24:21
+-- Dump completed on 2022-01-29 13:32:42
