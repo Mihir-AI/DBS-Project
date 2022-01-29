@@ -50,8 +50,7 @@ DROP TABLE IF EXISTS `countries_info`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `countries_info` (
   `country_id` varchar(20) NOT NULL,
-  `country_code` varchar(5) NOT NULL,
-  PRIMARY KEY (`country_id`)
+  `country_code` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
